@@ -1,8 +1,22 @@
 
-console.log("Inicilizamdo el programa");
+usuario = {
+    nombre: "Maria",
+    apellido: "Gomez",
+    edad: 25,
+    direccion: {
+        calle: "Candelaria",
+        ciudad: "Bogota",
+        pais: "Colombia"
+    }
+}
 
-setTimeout(() => {
-    console.log("Consultando la base de datos");
-}, 2000)
+function presentarse (){
+    console.log("Hola soy" + usuario.nombre);
+    console.log("Tengo" + usuario.apellido);
+    console.log("Vivo en" + usuario.direccion.calle);
+    console.log("En" + usuario.direccion.ciudad);
+    console.log("En" + usuario.direccion.pais);
 
-console.log("FInalizando el programa");
+}
+presentarse();
+console.log();
